@@ -34,6 +34,8 @@ requirements:
 test:
   imports:
     - yaff
+  commands:
+    - pip check
 
 about:
   home: http://molmod.github.io/yaff
