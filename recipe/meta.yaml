@@ -24,6 +24,8 @@ requirements:
     - cython >=0.26
   run:
     - python
+    - pip
+    - nose
     - matplotlib-base >1.0.0
     - h5py >=2.0.0
     - molmod >=1.4.1
@@ -34,6 +36,8 @@ requirements:
 test:
   imports:
     - yaff
+  commands:
+    - pip check
 
 about:
   home: http://molmod.github.io/yaff
