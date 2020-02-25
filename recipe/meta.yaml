@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - pip
+    - nose
     - matplotlib-base >1.0.0
     - h5py >=2.0.0
     - molmod >=1.4.1
