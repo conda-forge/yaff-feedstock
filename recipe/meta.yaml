@@ -28,7 +28,7 @@ requirements:
     - nose
     - matplotlib-base >1.0.0
     - h5py >=2.0.0
-    - molmod >=1.4.1
+    - molmod >=1.4.8
     - scipy >=0.17.1
     - xorg-libx11  # [py2k] 
     - {{ pin_compatible("numpy") }}
