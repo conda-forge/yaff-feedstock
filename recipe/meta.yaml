@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/molmod/yaff/archive/{{version}}.tar.gz
+  url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
   sha256: 7bd303f8a2c34d139cbba830b18ebfadb890d8a45f48e160c58dc66c974bba78
 
 build:
@@ -41,7 +41,7 @@ test:
 
 about:
   home: http://molmod.github.io/yaff
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Yaff is yet another force-field code'
