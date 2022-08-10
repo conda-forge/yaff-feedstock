@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
-  sha256: 7bd303f8a2c34d139cbba830b18ebfadb890d8a45f48e160c58dc66c974bba78
+  sha256: bf0218f2f63cb223a0e7011b323c7141db2435fde18a6ccb381a091f6d9cb116
 
 build:
-  number: 5
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win and py2k]
 
