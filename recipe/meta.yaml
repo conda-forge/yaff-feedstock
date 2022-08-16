@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
-  sha256: bf0218f2f63cb223a0e7011b323c7141db2435fde18a6ccb381a091f6d9cb116
+  sha256: a26cae3f8cdde16e735429657ac2a7d63edb6897947b6711e8ecb893be90cf81
   patches:
     - random.patch
 
