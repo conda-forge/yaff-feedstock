@@ -1,5 +1,5 @@
 {% set name = "yaff" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
-  sha256: b64ab5692061778472e5f97c4b2d3993388e534ed4b7f780b7467a44560e7180
+  sha256: a26cae3f8cdde16e735429657ac2a7d63edb6897947b6711e8ecb893be90cf81
   patches:
     - random.patch
 
