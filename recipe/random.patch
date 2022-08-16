@@ -1,0 +1,22 @@
+From 2af34d8c0957cd94270ba8cd29a720d0f944a6d6 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Mon, 15 Aug 2022 20:07:34 -0600
+Subject: [PATCH] random patch
+
+---
+ yaff/analysis/pca.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/yaff/analysis/pca.py b/yaff/analysis/pca.py
+index cfcf75d..2eb308b 100644
+--- a/yaff/analysis/pca.py
++++ b/yaff/analysis/pca.py
+@@ -30,7 +30,7 @@
+ import numpy as np
+ import scipy.linalg as spla
+ import matplotlib.pyplot as pt
+-from scipy import random
++from numpy import random
+ 
+ from molmod.units import *
+ from molmod.constants import boltzmann

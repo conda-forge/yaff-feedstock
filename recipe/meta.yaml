@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win and py2k]
+  skip: true  # [win]
 
 requirements:
   build:
