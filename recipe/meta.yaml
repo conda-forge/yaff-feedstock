@@ -1,16 +1,18 @@
 {% set name = "yaff" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7bd303f8a2c34d139cbba830b18ebfadb890d8a45f48e160c58dc66c974bba78
+  url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
+  sha256: bf0218f2f63cb223a0e7011b323c7141db2435fde18a6ccb381a091f6d9cb116
+  patches:
+    - version.patch
 
 build:
-  number: 5
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win and py2k]
 
@@ -41,7 +43,7 @@ test:
 
 about:
   home: http://molmod.github.io/yaff
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Yaff is yet another force-field code'
