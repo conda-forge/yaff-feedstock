@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: "echo \"__version__ = '{{ version }}'\" > yaff/version.py; {{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win]
 
 requirements:
   build:
