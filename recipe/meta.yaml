@@ -1,19 +1,19 @@
 {% set name = "yaff" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7bd303f8a2c34d139cbba830b18ebfadb890d8a45f48e160c58dc66c974bba78
+  url: https://github.com/molmod/yaff/archive/{{ version }}.tar.gz
+  sha256: bf0218f2f63cb223a0e7011b323c7141db2435fde18a6ccb381a091f6d9cb116
   patches:
     - random.patch
 
 build:
-  number: 6
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: "echo \"__version__ = '{{ version }}'\" > yaff/version.py; {{ PYTHON }} -m pip install . -vv"
   skip: true  # [win]
 
 requirements:
@@ -22,6 +22,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - numpy >=1.14
     - cython >=0.26
   run:
@@ -32,7 +33,6 @@ requirements:
     - h5py >=2.0.0
     - molmod >=1.4.8
     - scipy >=0.17.1
-    - xorg-libx11  # [py2k] 
     - {{ pin_compatible("numpy") }}
 
 test:

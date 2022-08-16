@@ -3,7 +3,7 @@ About yaff
 
 Home: http://molmod.github.io/yaff
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaff-feedstock/blob/main/LICENSE.txt)
 
