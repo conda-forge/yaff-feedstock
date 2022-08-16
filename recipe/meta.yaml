@@ -8,9 +8,11 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7bd303f8a2c34d139cbba830b18ebfadb890d8a45f48e160c58dc66c974bba78
+  patches:
+    - random.patch
 
 build:
-  number: 5
+  number: 6
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win and py2k]
 
