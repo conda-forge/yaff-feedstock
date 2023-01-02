@@ -12,9 +12,8 @@ source:
     - random.patch
 
 build:
-  number: 1
+  number: 2
   script: "echo \"__version__ = '{{ version }}'\" > yaff/version.py; {{ PYTHON }} -m pip install . -vv"
-  skip: true  # [win]
 
 requirements:
   build:
