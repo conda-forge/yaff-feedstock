@@ -1,5 +1,6 @@
-echo "__version__ = ^"%PKG_VERSION%^"" > %SRC_DIR%/yaff/version.py
-%PYTHON% -m pip install . -vv
-
-if %errorlevel% neq 0 exit /b %errorlevel%
-exit /b 0
+copy "%RECIPE_DIR%\build.sh" .
+set PREFIX=%PREFIX:\=/%
+set SRC_DIR=%SRC_DIR:\=/%
+set PYTHON=%PYTHON:\=/%
+bash -lc "./build.sh"
+IF %ERRORLEVEL% NEQ 0 exit 1
