@@ -34,7 +34,7 @@ requirements:
     - scipy >=0.17.1
     - {{ pin_compatible("numpy") }}
 
-test:
+test:  # [unix]
   imports:
     - yaff
   commands:
