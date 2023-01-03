@@ -1,6 +1,4 @@
-@echo off
-set CONTENT="__version__ = %PKG_VERSION%"
-echo %CONTENT% > %SRC_DIR%/yaff/version.py
+> %SRC_DIR%/yaff/version.py echo __version__ = "%PKG_VERSION%"
 %PYTHON% -m pip install . -vv
 
 if %errorlevel% neq 0 exit /b %errorlevel%
