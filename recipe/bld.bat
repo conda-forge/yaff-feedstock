@@ -1,4 +1,4 @@
-set "CONTENT=__version__ = ^"%PKG_VERSION%^""
+set CONTENT="__version__ = ^"%PKG_VERSION%^""
 echo %CONTENT% > %SRC_DIR%/yaff/version.py
 %PYTHON% -m pip install . -vv
 
