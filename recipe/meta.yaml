@@ -10,9 +10,10 @@ source:
   sha256: a26cae3f8cdde16e735429657ac2a7d63edb6897947b6711e8ecb893be90cf81
   patches:
     - random.patch
+    - setup.patch
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
