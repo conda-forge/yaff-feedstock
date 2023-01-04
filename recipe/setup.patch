@@ -1,0 +1,22 @@
+From dd45b9bf007801e400b7121b1b0b5a6a8cd7d952 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Wed, 4 Jan 2023 04:33:15 -0700
+Subject: [PATCH] String clean up
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index fff2a905..a3b71f3f 100755
+--- a/setup.py
++++ b/setup.py
+@@ -61,7 +61,7 @@
+     # Try to load the git version tag from version.py
+     try:
+         with open(fn_version, 'r') as fh:
+-            __version__ = fh.read().split('=')[-1].replace('\'', '').strip()
++            __version__ = fh.read().split('=')[-1].replace('\'', '').replace('"', '').strip()
+     except IOError:
+         print('Could not determine version. Giving up.')
+         sys.exit(1)
