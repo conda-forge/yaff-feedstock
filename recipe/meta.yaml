@@ -13,11 +13,12 @@ source:
     - setup.patch
 
 build:
-  number: 4
+  number: 5
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -32,7 +33,6 @@ requirements:
     - h5py >=2.0.0
     - molmod >=1.4.8
     - scipy >=0.17.1
-    - {{ pin_compatible("numpy") }}
 
 test:
   imports:
